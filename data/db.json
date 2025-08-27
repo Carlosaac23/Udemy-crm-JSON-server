@@ -8,18 +8,11 @@
       "company": "Vercel"
     },
     {
-      "id": "15c3",
       "name": "Gabriela",
       "email": "gabriela@hotmail.com",
-      "phone": "123456789",
-      "company": "Konecta"
-    },
-    {
-      "id": "a12f",
-      "name": "Guillermo",
-      "email": "guillermo@gmail.com",
       "phone": "3045653014",
-      "company": "Vercel"
+      "company": "Konecta",
+      "id": "15c3"
     }
   ]
 }
