@@ -10,6 +10,7 @@ export async function newClient(client) {
         'Content-Type': 'application/json',
       },
     });
+
     window.location.href = 'index.html';
   } catch (error) {
     console.error(error);
@@ -44,6 +45,23 @@ export async function getClient(id) {
     const res = await fetch(`${URL}/${id}`);
     const client = await res.json();
     return client;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+// Update client
+export async function updateClient(client) {
+  try {
+    await fetch(`${URL}/${client.id}`, {
+      method: 'PUT',
+      body: JSON.stringify(client),
+      headers: {
+        'Content-Type': 'apllication/json',
+      },
+    });
+
+    window.location.href = 'index.html';
   } catch (error) {
     console.error(error);
   }
