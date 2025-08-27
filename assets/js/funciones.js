@@ -12,3 +12,7 @@ export function showAlert(message) {
     setTimeout(() => alert.remove(), 3000);
   }
 }
+
+export function validate(obj) {
+  return !Object.values(obj).every(input => input !== '');
+}
