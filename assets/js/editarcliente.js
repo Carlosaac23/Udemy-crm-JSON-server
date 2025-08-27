@@ -18,9 +18,7 @@ import { showAlert, validate } from './funciones.js';
   const companyInput = document.getElementById('empresa');
   const idInput = document.getElementById('id');
 
-  function showClient(client) {
-    const { id, name, email, phone, company } = client;
-
+  function showClient({ id, name, email, phone, company }) {
     nameInput.value = name;
     emailInput.value = email;
     phoneInput.value = phone;

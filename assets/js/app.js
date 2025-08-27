@@ -8,9 +8,7 @@ import { getClients, deleteClient } from './API.js';
 
   async function showClients() {
     const clients = await getClients();
-    clients.forEach(client => {
-      const { id, name, email, phone, company } = client;
-
+    clients.forEach(({ id, name, email, phone, company }) => {
       const row = document.createElement('tr');
       row.innerHTML += `
         <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
