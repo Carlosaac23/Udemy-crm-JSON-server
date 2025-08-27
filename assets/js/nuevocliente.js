@@ -1,4 +1,4 @@
-import { showAlert } from './funciones.js';
+import { showAlert, validate } from './funciones.js';
 import { newClient } from './API.js';
 
 (function () {
@@ -13,21 +13,17 @@ import { newClient } from './API.js';
     const phone = document.getElementById('telefono').value;
     const company = document.getElementById('empresa').value;
 
-    const cliente = {
+    const client = {
       name,
       email,
       phone,
       company,
     };
 
-    if (validate(cliente)) {
+    if (validate(client)) {
       return showAlert('Todos los campos son obligatorios');
     }
 
-    newClient(cliente);
-  }
-
-  function validate(obj) {
-    return !Object.values(obj).every(input => input !== '');
+    newClient(client);
   }
 })();
