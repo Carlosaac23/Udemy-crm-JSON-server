@@ -1,11 +1,25 @@
 {
   "clientes": [
     {
-      "nombre": "Carlos Acosta",
-      "email": "carlos@correo.com",
-      "telefono": "123456789",
-      "empresa": "Vercel",
-      "id": 1
+      "id": "2a54",
+      "name": "Carlos",
+      "email": "carlosaac232001@gmail.com",
+      "phone": "3007410161",
+      "company": "Vercel"
+    },
+    {
+      "id": "15c3",
+      "name": "Gabriela",
+      "email": "gabriela@hotmail.com",
+      "phone": "123456789",
+      "company": "Konecta"
+    },
+    {
+      "id": "a12f",
+      "name": "Guillermo",
+      "email": "guillermo@gmail.com",
+      "phone": "3045653014",
+      "company": "Vercel"
     }
   ]
 }
