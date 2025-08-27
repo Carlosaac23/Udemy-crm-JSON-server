@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nombre": "Carlos Acosta",
+      "email": "carlos@correo.com",
+      "telefono": "123456789",
+      "empresa": "Vercel",
+      "id": 1
+    }
+  ]
+}
