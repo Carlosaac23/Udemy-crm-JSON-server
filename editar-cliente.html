@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRM - JSONServer</title>
-    <link rel="stylesheet" href="css/tailwind.min.css" />
-    <script src="js/editarcliente.js" type="module" defer></script>
+    <link rel="stylesheet" href="assets/css/tailwind.min.css" />
+    <script src="assets/js/editarcliente.js" type="module" defer></script>
   </head>
   <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
@@ -32,7 +32,7 @@
                     id="nombre"
                     name="nombre"
                     type="text"
-                    placeholder="Nombre Cliente"
+                    placeholder="Nombre"
                   />
                 </div>
                 <div class="mb-4">
@@ -42,7 +42,7 @@
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="Email Cliente"
+                    placeholder="Email"
                   />
                 </div>
 
@@ -53,7 +53,7 @@
                     id="telefono"
                     name="telefono"
                     type="tel"
-                    placeholder="Teléfono Cliente"
+                    placeholder="Teléfono"
                   />
                 </div>
 
@@ -64,13 +64,17 @@
                     id="empresa"
                     name="empresa"
                     type="text"
-                    placeholder="Empresa Cliente"
+                    placeholder="Empresa"
                   />
                 </div>
 
                 <input type="hidden" name="id" id="id" value="" />
 
-                <input type="submit" class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold" value="Guardar Cambios" />
+                <input
+                  type="submit"
+                  class="bg-teal-600 hover:bg-teal-900 w-full mt-5 rounded-md p-2 text-white uppercase font-bold cursor-pointer"
+                  value="Guardar Cambios"
+                />
               </form>
             </div>
           </div>
